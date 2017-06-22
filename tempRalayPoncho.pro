@@ -1,4 +1,4 @@
-update=Mon 29 May 2017 08:52:04 PM ART
+update=Wed 21 Jun 2017 10:27:44 PM ART
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,9 +23,11 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../../../Documents/Diseño de circuitos impresos/TPpcbdesign/Libs
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -56,5 +58,8 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=Libs/ej2cese
+LibName31=analog-cache
+LibName32=ciaa-nxp-cache
+LibName33=relay
+LibName34=cmos_ieee

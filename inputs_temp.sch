@@ -1,0 +1,301 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ej2cese
+LIBS:analog-cache
+LIBS:ciaa-nxp-cache
+LIBS:relay
+LIBS:cmos_ieee
+LIBS:tempRalayPoncho-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP601R U?
+U 1 1 594B0012
+P 5900 2900
+F 0 "U?" H 5950 3100 50  0000 C CNN
+F 1 "MCP601R" H 6100 2700 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 5925 2625 50  0001 L CNN
+F 3 "" H 5950 3100 50  0001 C CNN
+	1    5900 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 594B009B
+P 4900 3200
+F 0 "C?" H 4925 3300 50  0000 L CNN
+F 1 "1uF" H 4925 3100 50  0000 L CNN
+F 2 "" H 4938 3050 50  0001 C CNN
+F 3 "" H 4900 3200 50  0001 C CNN
+F 4 "Value" H 4900 3200 60  0001 C CNN "Manf"
+F 5 "Value" H 4900 3200 60  0001 C CNN "Manf#"
+F 6 "Value" H 4900 3200 60  0001 C CNN "Digikey#"
+F 7 "Value" H 4900 3200 60  0001 C CNN "Mouser#"
+	1    4900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 594B01CC
+P 6500 2050
+F 0 "C?" H 6525 2150 50  0000 L CNN
+F 1 "10u" H 6525 1950 50  0000 L CNN
+F 2 "" H 6538 1900 50  0001 C CNN
+F 3 "" H 6500 2050 50  0001 C CNN
+F 4 "Value" H 6500 2050 60  0001 C CNN "Manf"
+F 5 "Value" H 6500 2050 60  0001 C CNN "Manf#"
+F 6 "Value" H 6500 2050 60  0001 C CNN "Digikey#"
+F 7 "Value" H 6500 2050 60  0001 C CNN "Mouser#"
+	1    6500 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C?
+U 1 1 594B023F
+P 6900 2050
+F 0 "C?" H 6925 2150 50  0000 L CNN
+F 1 "100n" H 6925 1950 50  0000 L CNN
+F 2 "" H 6938 1900 50  0001 C CNN
+F 3 "" H 6900 2050 50  0001 C CNN
+F 4 "Value" H 6900 2050 60  0001 C CNN "Manf"
+F 5 "Value" H 6900 2050 60  0001 C CNN "Manf#"
+F 6 "Value" H 6900 2050 60  0001 C CNN "Digikey#"
+F 7 "Value" H 6900 2050 60  0001 C CNN "Mouser#"
+	1    6900 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 594B027F
+P 4600 2800
+F 0 "R?" V 4680 2800 50  0000 C CNN
+F 1 "100k" V 4600 2800 50  0000 C CNN
+F 2 "" V 4530 2800 50  0001 C CNN
+F 3 "" H 4600 2800 50  0001 C CNN
+F 4 "Value" H 4600 2800 60  0001 C CNN "Manf"
+F 5 "Value" H 4600 2800 60  0001 C CNN "Manf#"
+F 6 "Value" H 4600 2800 60  0001 C CNN "Digikey#"
+F 7 "Value" H 4600 2800 60  0001 C CNN "Mouser#"
+	1    4600 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 594B0304
+P 6700 2300
+F 0 "#PWR?" H 6700 2050 50  0001 C CNN
+F 1 "GND" H 6700 2150 50  0000 C CNN
+F 2 "" H 6700 2300 50  0001 C CNN
+F 3 "" H 6700 2300 50  0001 C CNN
+	1    6700 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 594B0325
+P 5800 3250
+F 0 "#PWR?" H 5800 3000 50  0001 C CNN
+F 1 "GND" H 5800 3100 50  0000 C CNN
+F 2 "" H 5800 3250 50  0001 C CNN
+F 3 "" H 5800 3250 50  0001 C CNN
+	1    5800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 594B033F
+P 4900 3500
+F 0 "#PWR?" H 4900 3250 50  0001 C CNN
+F 1 "GND" H 4900 3350 50  0000 C CNN
+F 2 "" H 4900 3500 50  0001 C CNN
+F 3 "" H 4900 3500 50  0001 C CNN
+	1    4900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 594B0569
+P 6700 1800
+F 0 "#PWR?" H 6700 1650 50  0001 C CNN
+F 1 "+5V" H 6700 1940 50  0000 C CNN
+F 2 "" H 6700 1800 50  0001 C CNN
+F 3 "" H 6700 1800 50  0001 C CNN
+	1    6700 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1900 6500 1800
+Wire Wire Line
+	5800 1800 6900 1800
+Wire Wire Line
+	6900 1800 6900 1900
+Connection ~ 6700 1800
+Wire Wire Line
+	6900 2300 6900 2200
+Wire Wire Line
+	6500 2300 6900 2300
+Wire Wire Line
+	6500 2300 6500 2200
+Connection ~ 6700 2300
+Wire Wire Line
+	5800 2600 5800 1800
+Connection ~ 6500 1800
+Wire Wire Line
+	5600 2800 4750 2800
+Wire Wire Line
+	4900 3050 4900 2800
+Connection ~ 4900 2800
+Wire Wire Line
+	4900 3350 4900 3500
+Wire Wire Line
+	5600 3000 5450 3000
+Wire Wire Line
+	5450 3000 5450 3500
+Wire Wire Line
+	5450 3500 6400 3500
+Wire Wire Line
+	6400 3500 6400 2900
+Wire Wire Line
+	6200 2900 7200 2900
+Connection ~ 6400 2900
+Wire Wire Line
+	4450 2800 3900 2800
+Wire Wire Line
+	5800 3250 5800 3200
+$Comp
+L +3,3V #PWR?
+U 1 1 594B174B
+P 4850 4400
+F 0 "#PWR?" H 4850 4360 30  0001 C CNN
+F 1 "+3,3V" H 4850 4510 30  0000 C CNN
+F 2 "" H 4850 4400 60  0000 C CNN
+F 3 "" H 4850 4400 60  0000 C CNN
+	1    4850 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3,3V #PWR?
+U 1 1 594B1776
+P 5650 4500
+F 0 "#PWR?" H 5650 4460 30  0001 C CNN
+F 1 "+3,3V" H 5650 4610 30  0000 C CNN
+F 2 "" H 5650 4500 60  0000 C CNN
+F 3 "" H 5650 4500 60  0000 C CNN
+	1    5650 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 594B178D
+P 4700 4850
+F 0 "C?" H 4725 4950 50  0000 L CNN
+F 1 "C" H 4725 4750 50  0000 L CNN
+F 2 "" H 4738 4700 50  0001 C CNN
+F 3 "" H 4700 4850 50  0001 C CNN
+	1    4700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 594B180A
+P 5000 4850
+F 0 "C?" H 5025 4950 50  0000 L CNN
+F 1 "C" H 5025 4750 50  0000 L CNN
+F 2 "" H 5038 4700 50  0001 C CNN
+F 3 "" H 5000 4850 50  0001 C CNN
+	1    5000 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 594B1832
+P 4850 5300
+F 0 "#PWR?" H 4850 5050 50  0001 C CNN
+F 1 "GND" H 4850 5150 50  0000 C CNN
+F 2 "" H 4850 5300 50  0001 C CNN
+F 3 "" H 4850 5300 50  0001 C CNN
+	1    4850 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Core_Ferrite L?
+U 1 1 594B2A5B
+P 2250 4150
+F 0 "L?" V 2200 4150 50  0000 C CNN
+F 1 "BLM18PG471SN1D" V 2360 4150 50  0000 C CNN
+F 2 "" H 2250 4150 50  0001 C CNN
+F 3 "" H 2250 4150 50  0001 C CNN
+F 4 "Value" H 2250 4150 60  0001 C CNN "Manf"
+F 5 "Value" H 2250 4150 60  0001 C CNN "Manf#"
+F 6 "Value" H 2250 4150 60  0001 C CNN "Digikey#"
+F 7 "Value" H 2250 4150 60  0001 C CNN "Mouser#"
+	1    2250 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L L_Core_Ferrite L?
+U 1 1 594B2B60
+P 2200 4600
+F 0 "L?" V 2150 4600 50  0000 C CNN
+F 1 "BLM18PG471SN1D" V 2310 4600 50  0000 C CNN
+F 2 "" H 2200 4600 50  0001 C CNN
+F 3 "" H 2200 4600 50  0001 C CNN
+F 4 "Value" H 2200 4600 60  0001 C CNN "Manf"
+F 5 "Value" H 2200 4600 60  0001 C CNN "Manf#"
+F 6 "Value" H 2200 4600 60  0001 C CNN "Digikey#"
+F 7 "Value" H 2200 4600 60  0001 C CNN "Mouser#"
+	1    2200 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L MAX31855KASA+ U?
+U 1 1 594B3BED
+P 3800 4800
+F 0 "U?" H 3800 5300 60  0000 C CNN
+F 1 "MAX31855KASA+" H 3800 4300 60  0000 C CNN
+F 2 "" H 3800 4800 60  0001 C CNN
+F 3 "" H 3800 4800 60  0001 C CNN
+	1    3800 4800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
