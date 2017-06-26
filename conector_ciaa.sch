@@ -1,40 +1,6 @@
 EESchema Schematic File Version 2
-LIBS:tempRalayPoncho-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ej2cese
-LIBS:analog-cache
-LIBS:ciaa-nxp-cache
-LIBS:relay
-LIBS:cmos_ieee
-LIBS:tempRalayPoncho-cache
+LIBS:TempRelay
+LIBS:tempRelayPoncho-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -136,7 +102,6 @@ Wire Wire Line
 Connection ~ 4900 4000
 Connection ~ 4900 4100
 NoConn ~ 4600 2400
-NoConn ~ 4600 2600
 NoConn ~ 4600 2700
 NoConn ~ 4600 2800
 NoConn ~ 4600 2900
@@ -187,16 +152,11 @@ Wire Wire Line
 Connection ~ 6600 3000
 Wire Wire Line
 	6600 3400 6900 3400
-Wire Wire Line
-	6600 3500 6900 3500
-Connection ~ 6600 3400
 Connection ~ 6600 3100
 Wire Wire Line
 	6600 4000 6900 4000
-Connection ~ 6600 3500
 Wire Wire Line
 	6600 4100 6900 4100
-Connection ~ 6600 4000
 Wire Wire Line
 	6600 4000 6600 4400
 Connection ~ 6600 4100
@@ -226,10 +186,10 @@ NoConn ~ 8100 3900
 NoConn ~ 8100 4000
 NoConn ~ 8100 4100
 $Comp
-L GND #PWR01
+L GND #PWR3
 U 1 1 594EB190
 P 4900 4400
-F 0 "#PWR01" H 4900 4150 50  0001 C CNN
+F 0 "#PWR3" H 4900 4150 50  0001 C CNN
 F 1 "GND" H 4900 4250 50  0000 C CNN
 F 2 "" H 4900 4400 50  0001 C CNN
 F 3 "" H 4900 4400 50  0001 C CNN
@@ -237,10 +197,10 @@ F 3 "" H 4900 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L GND #PWR5
 U 1 1 594EB307
 P 6600 4400
-F 0 "#PWR02" H 6600 4150 50  0001 C CNN
+F 0 "#PWR5" H 6600 4150 50  0001 C CNN
 F 1 "GND" H 6600 4250 50  0000 C CNN
 F 2 "" H 6600 4400 50  0001 C CNN
 F 3 "" H 6600 4400 50  0001 C CNN
@@ -248,10 +208,10 @@ F 3 "" H 6600 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L GND #PWR4
 U 1 1 594EB35A
 P 6200 2600
-F 0 "#PWR03" H 6200 2350 50  0001 C CNN
+F 0 "#PWR4" H 6200 2350 50  0001 C CNN
 F 1 "GND" H 6200 2450 50  0000 C CNN
 F 2 "" H 6200 2600 50  0001 C CNN
 F 3 "" H 6200 2600 50  0001 C CNN
@@ -263,8 +223,8 @@ L +3.3V-RESCUE-tempRalayPoncho #PWR5
 U 1 1 594EB36B
 P 3100 2000
 AR Path="/594EB36B" Ref="#PWR5"  Part="1" 
-AR Path="/59498167/594EB36B" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 3100 1850 50  0001 C CNN
+AR Path="/59498167/594EB36B" Ref="#PWR1"  Part="1" 
+F 0 "#PWR1" H 3100 1850 50  0001 C CNN
 F 1 "+3.3V" H 3100 2140 50  0000 C CNN
 F 2 "" H 3100 2000 50  0001 C CNN
 F 3 "" H 3100 2000 50  0001 C CNN
@@ -272,10 +232,10 @@ F 3 "" H 3100 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR05
+L +5V #PWR2
 U 1 1 594EB38C
 P 4900 2000
-F 0 "#PWR05" H 4900 1850 50  0001 C CNN
+F 0 "#PWR2" H 4900 1850 50  0001 C CNN
 F 1 "+5V" H 4900 2140 50  0000 C CNN
 F 2 "" H 4900 2000 50  0001 C CNN
 F 3 "" H 4900 2000 50  0001 C CNN
@@ -284,10 +244,10 @@ F 3 "" H 4900 2000 50  0001 C CNN
 $EndComp
 NoConn ~ 4600 2500
 $Comp
-L PWR_FLAG #FLG06
+L PWR_FLAG #FLG1
 U 1 1 594EBA4F
 P 5300 2300
-F 0 "#FLG06" H 5300 2375 50  0001 C CNN
+F 0 "#FLG1" H 5300 2375 50  0001 C CNN
 F 1 "PWR_FLAG" H 5300 2450 50  0000 C CNN
 F 2 "" H 5300 2300 50  0001 C CNN
 F 3 "" H 5300 2300 50  0001 C CNN
@@ -301,4 +261,11 @@ Wire Wire Line
 	4600 2200 4900 2200
 NoConn ~ 8100 2200
 NoConn ~ 6900 2200
+Wire Wire Line
+	6600 3500 6900 3500
+Connection ~ 6600 3400
+Wire Wire Line
+	4600 2600 5300 2600
+Text HLabel 5300 2600 2    60   UnSpc ~ 0
+GNDA
 $EndSCHEMATC

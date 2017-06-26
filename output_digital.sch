@@ -1,49 +1,15 @@
 EESchema Schematic File Version 2
-LIBS:tempRalayPoncho-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ej2cese
-LIBS:analog-cache
-LIBS:ciaa-nxp-cache
-LIBS:relay
-LIBS:cmos_ieee
-LIBS:tempRalayPoncho-cache
+LIBS:TempRelay
+LIBS:tempRelayPoncho-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
-Title "Poncho Edu CIAA - Sensor Temperatura y Salidas digitales"
+Title "Poncho Edu CIAA - Salidas digitales"
 Date "2017-06-14"
 Rev "1.0"
-Comp "Autor: Francisco Suarez"
+Comp "Autor: Francisco Suárez"
 Comment1 "Revisor:  Mariano Orlante"
 Comment2 "Licencia: 'Docs/Licencia.txt\""
 Comment3 ""
@@ -82,10 +48,10 @@ F 8 "Diode Standard 300V 1A SMA" H 3500 3050 60  0001 C CNN "Description"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +5V #PWR018
+L +5V #PWR15
 U 1 1 5949AA7B
 P 3900 2550
-F 0 "#PWR018" H 3900 2400 50  0001 C CNN
+F 0 "#PWR15" H 3900 2400 50  0001 C CNN
 F 1 "+5V" H 3900 2690 50  0000 C CNN
 F 2 "" H 3900 2550 50  0001 C CNN
 F 3 "" H 3900 2550 50  0001 C CNN
@@ -93,10 +59,10 @@ F 3 "" H 3900 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L GND #PWR16
 U 1 1 5949AA9F
 P 3900 4550
-F 0 "#PWR019" H 3900 4300 50  0001 C CNN
+F 0 "#PWR16" H 3900 4300 50  0001 C CNN
 F 1 "GND" H 3900 4400 50  0000 C CNN
 F 2 "" H 3900 4550 50  0001 C CNN
 F 3 "" H 3900 4550 50  0001 C CNN
@@ -124,9 +90,7 @@ Connection ~ 3500 3600
 Wire Wire Line
 	3600 3850 3500 3850
 Wire Wire Line
-	3900 4050 3900 4150
-Wire Wire Line
-	3900 4450 3900 4550
+	3900 4050 3900 4550
 Wire Wire Line
 	3200 3850 2700 3850
 Wire Wire Line
@@ -136,10 +100,10 @@ Wire Wire Line
 Wire Wire Line
 	5100 2950 5800 2950
 $Comp
-L +5V #PWR020
+L +5V #PWR17
 U 1 1 594AF973
 P 3900 5150
-F 0 "#PWR020" H 3900 5000 50  0001 C CNN
+F 0 "#PWR17" H 3900 5000 50  0001 C CNN
 F 1 "+5V" H 3900 5290 50  0000 C CNN
 F 2 "" H 3900 5150 50  0001 C CNN
 F 3 "" H 3900 5150 50  0001 C CNN
@@ -147,10 +111,10 @@ F 3 "" H 3900 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR021
+L GND #PWR18
 U 1 1 594AF979
 P 3900 7150
-F 0 "#PWR021" H 3900 6900 50  0001 C CNN
+F 0 "#PWR18" H 3900 6900 50  0001 C CNN
 F 1 "GND" H 3900 7000 50  0000 C CNN
 F 2 "" H 3900 7150 50  0001 C CNN
 F 3 "" H 3900 7150 50  0001 C CNN
@@ -178,9 +142,7 @@ Connection ~ 3500 6200
 Wire Wire Line
 	3600 6450 3500 6450
 Wire Wire Line
-	3900 6650 3900 6750
-Wire Wire Line
-	3900 7050 3900 7150
+	3900 6650 3900 7150
 Wire Wire Line
 	3200 6450 2700 6450
 Wire Wire Line
@@ -285,10 +247,10 @@ Wire Wire Line
 Wire Wire Line
 	3900 1850 3900 1950
 $Comp
-L GND #PWR022
+L GND #PWR14
 U 1 1 594DE1D3
 P 3900 1950
-F 0 "#PWR022" H 3900 1700 50  0001 C CNN
+F 0 "#PWR14" H 3900 1700 50  0001 C CNN
 F 1 "GND" H 3900 1800 50  0000 C CNN
 F 2 "" H 3900 1950 50  0001 C CNN
 F 3 "" H 3900 1950 50  0001 C CNN
@@ -296,10 +258,10 @@ F 3 "" H 3900 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR023
+L GND #PWR19
 U 1 1 594DE220
 P 4800 1450
-F 0 "#PWR023" H 4800 1200 50  0001 C CNN
+F 0 "#PWR19" H 4800 1200 50  0001 C CNN
 F 1 "GND" H 4800 1300 50  0000 C CNN
 F 2 "" H 4800 1450 50  0001 C CNN
 F 3 "" H 4800 1450 50  0001 C CNN
@@ -312,22 +274,6 @@ Text HLabel 2700 3850 0    60   Input ~ 0
 REL1_SEL
 Text HLabel 2700 6450 0    60   Input ~ 0
 REL2_SEL
-$Comp
-L G5LE-1A-5DC U5
-U 1 1 594F9275
-P 4500 3150
-F 0 "U5" H 4500 3525 60  0000 C CNN
-F 1 "G2RL-1A-E" H 4525 2775 60  0000 C CNN
-F 2 "footprints:Relay_SPST_Schrack-RP-II-1_RM3-5mm" H 4500 3150 60  0001 C CNN
-F 3 "en-g2rl-472571.pdf" H 4500 3150 60  0001 C CNN
-F 4 "Omron Electronics" H 4500 3150 60  0001 C CNN "Manf"
-F 5 "G2RL-1A-E-ASI DC24" H 4500 3150 60  0001 C CNN "Manf#"
-F 6 "Value" H 4500 3150 60  0001 C CNN "Digikey#"
-F 7 "653-G2RL1AEASIDC24" H 4500 3150 60  0001 C CNN "Mouser#"
-F 8 "General Purpose Relays 1 form A w/ TV3 24VDC Coil, 16A" H 4500 3150 60  0001 C CNN "Description"
-	1    4500 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3900 3650 3900 3350
 Wire Wire Line
@@ -371,17 +317,17 @@ $EndComp
 $Comp
 L R R7
 U 1 1 594F5EE4
-P 3900 4300
-F 0 "R7" V 3980 4300 50  0000 C CNN
-F 1 "10k" V 3800 4300 50  0000 C CNN
-F 2 "footprints:R_1206_HandSoldering" V 3830 4300 50  0001 C CNN
-F 3 "../Datasheets/PYu-RC_Group_51_RoHS_L_7.pdf" H 3900 4300 50  0001 C CNN
-F 4 "Yageo" H 3900 4300 60  0001 C CNN "Manf"
-F 5 "RC1206JR-0710KL" H 3900 4300 60  0001 C CNN "Manf#"
-F 6 "311-10KERTR-ND" H 3900 4300 60  0001 C CNN "Digikey#"
-F 7 "Value" H 3900 4300 60  0001 C CNN "Mouser#"
-F 8 "10k Ohm ±5% 0.25W, 1/4W Chip, Moisture Resistant Thick Film" H 3900 4300 60  0001 C CNN "Description"
-	1    3900 4300
+P 3550 4200
+F 0 "R7" V 3630 4200 50  0000 C CNN
+F 1 "10k" V 3450 4200 50  0000 C CNN
+F 2 "footprints:R_1206_HandSoldering" V 3480 4200 50  0001 C CNN
+F 3 "../Datasheets/PYu-RC_Group_51_RoHS_L_7.pdf" H 3550 4200 50  0001 C CNN
+F 4 "Yageo" H 3550 4200 60  0001 C CNN "Manf"
+F 5 "RC1206JR-0710KL" H 3550 4200 60  0001 C CNN "Manf#"
+F 6 "311-10KERTR-ND" H 3550 4200 60  0001 C CNN "Digikey#"
+F 7 "Value" H 3550 4200 60  0001 C CNN "Mouser#"
+F 8 "10k Ohm ±5% 0.25W, 1/4W Chip, Moisture Resistant Thick Film" H 3550 4200 60  0001 C CNN "Description"
+	1    3550 4200
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -403,17 +349,17 @@ $EndComp
 $Comp
 L R R8
 U 1 1 594F7CE0
-P 3900 6900
-F 0 "R8" V 3980 6900 50  0000 C CNN
-F 1 "10k" V 3800 6900 50  0000 C CNN
-F 2 "footprints:R_1206_HandSoldering" V 3830 6900 50  0001 C CNN
-F 3 "../Datasheets/PYu-RC_Group_51_RoHS_L_7.pdf" H 3900 6900 50  0001 C CNN
-F 4 "Yageo" H 3900 6900 60  0001 C CNN "Manf"
-F 5 "RC1206JR-0710KL" H 3900 6900 60  0001 C CNN "Manf#"
-F 6 "311-10KERTR-ND" H 3900 6900 60  0001 C CNN "Digikey#"
-F 7 "Value" H 3900 6900 60  0001 C CNN "Mouser#"
-F 8 "10k Ohm ±5% 0.25W, 1/4W Chip, Moisture Resistant Thick Film" H 3900 6900 60  0001 C CNN "Description"
-	1    3900 6900
+P 3550 6850
+F 0 "R8" V 3630 6850 50  0000 C CNN
+F 1 "10k" V 3450 6850 50  0000 C CNN
+F 2 "footprints:R_1206_HandSoldering" V 3480 6850 50  0001 C CNN
+F 3 "../Datasheets/PYu-RC_Group_51_RoHS_L_7.pdf" H 3550 6850 50  0001 C CNN
+F 4 "Yageo" H 3550 6850 60  0001 C CNN "Manf"
+F 5 "RC1206JR-0710KL" H 3550 6850 60  0001 C CNN "Manf#"
+F 6 "311-10KERTR-ND" H 3550 6850 60  0001 C CNN "Digikey#"
+F 7 "Value" H 3550 6850 60  0001 C CNN "Mouser#"
+F 8 "10k Ohm ±5% 0.25W, 1/4W Chip, Moisture Resistant Thick Film" H 3550 6850 60  0001 C CNN "Description"
+	1    3550 6850
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -505,10 +451,10 @@ F 1 "G2RL-1A-E" H 4525 5375 60  0000 C CNN
 F 2 "footprints:Relay_SPST_Schrack-RP-II-1_RM3-5mm" H 4500 5750 60  0001 C CNN
 F 3 "en-g2rl-472571.pdf" H 4500 5750 60  0001 C CNN
 F 4 "Omron Electronics" H 4500 5750 60  0001 C CNN "Manf"
-F 5 "G2RL-1A-E-ASI DC24" H 4500 5750 60  0001 C CNN "Manf#"
+F 5 "G2RL-1A-E-ASI DC5" H 4500 5750 60  0001 C CNN "Manf#"
 F 6 "Value" H 4500 5750 60  0001 C CNN "Digikey#"
-F 7 "653-G2RL1AEASIDC24" H 4500 5750 60  0001 C CNN "Mouser#"
-F 8 "General Purpose Relays 1 form A w/ TV3 24VDC Coil, 16A" H 4500 5750 60  0001 C CNN "Description"
+F 7 "653-G2RL1AEASIDC5" H 4500 5750 60  0001 C CNN "Mouser#"
+F 8 "General Purpose Relays 1 form A w/ TV3 5VDC Coil, 16A" H 4500 5750 60  0001 C CNN "Description"
 	1    4500 5750
 	1    0    0    -1  
 $EndComp
@@ -546,10 +492,42 @@ Wire Notes Line
 	5800 600  2200 600 
 Wire Notes Line
 	5800 1400 7600 1400
-Wire Notes Line
-	6550 4900 7600 4900
 Text Notes 7800 1400 0    99   ~ 0
 Salida SSR (Solid State Realy)
-Text Notes 7800 4900 0    99   ~ 0
+Text Notes 7800 2650 0    99   ~ 0
 Salidas a Relay - 16A - 440VAC, 300VDC
+Wire Wire Line
+	3550 4050 3550 3850
+Connection ~ 3550 3850
+Wire Wire Line
+	3550 4350 3550 4450
+Wire Wire Line
+	3550 4450 3900 4450
+Connection ~ 3900 4450
+Wire Wire Line
+	3550 6700 3550 6450
+Connection ~ 3550 6450
+Wire Wire Line
+	3900 7050 3550 7050
+Wire Wire Line
+	3550 7050 3550 7000
+Connection ~ 3900 7050
+$Comp
+L G5LE-1A-5DC U4
+U 1 1 59510F67
+P 4500 3150
+F 0 "U4" H 4500 3525 60  0000 C CNN
+F 1 "G2RL-1A-E" H 4525 2775 60  0000 C CNN
+F 2 "footprints:Relay_SPST_Schrack-RP-II-1_RM3-5mm" H 4500 3150 60  0001 C CNN
+F 3 "en-g2rl-472571.pdf" H 4500 3150 60  0001 C CNN
+F 4 "Omron Electronics" H 4500 3150 60  0001 C CNN "Manf"
+F 5 "G2RL-1A-E-ASI DC5" H 4500 3150 60  0001 C CNN "Manf#"
+F 6 "Value" H 4500 3150 60  0001 C CNN "Digikey#"
+F 7 "653-G2RL1AEASIDC5" H 4500 3150 60  0001 C CNN "Mouser#"
+F 8 "General Purpose Relays 1 form A w/ TV3 5VDC Coil, 16A" H 4500 3150 60  0001 C CNN "Description"
+	1    4500 3150
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	7600 2600 6550 2600
 $EndSCHEMATC
