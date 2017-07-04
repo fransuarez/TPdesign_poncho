@@ -1,4 +1,4 @@
-update=Mon 26 Jun 2017 08:54:13 AM ART
+update=Mon 03 Jul 2017 10:57:14 PM ART
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -35,8 +33,10 @@ NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=../../../CIAA/Repositorios/TPpcbdesign/Libs
+LibDir=Libs
 [eeschema/libraries]
 LibName1=Libs/TempRelay

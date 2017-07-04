@@ -1,0 +1,499 @@
+EESchema Schematic File Version 2
+LIBS:TempRelay
+LIBS:tempRelayPoncho-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title "Poncho Edu CIAA - Sensores de Temperatura"
+Date "2017-06-14"
+Rev "1.0"
+Comp "Autor: Francisco Suárez"
+Comment1 "Revisor:  Mariano Orlante"
+Comment2 "Licencia: 'Docs/Licencia.txt\""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP601R U3
+U 1 1 594B0012
+P 6100 2200
+F 0 "U3" H 6150 2400 50  0000 C CNN
+F 1 "MCP601R" H 6300 2000 50  0000 C CNN
+F 2 "footprints:SOT-23-5_HandSoldering" H 6125 1925 50  0001 L CNN
+F 3 "MCP601,2,3,4.pdf" H 6150 2400 50  0001 C CNN
+F 4 "Microchip Technology" H 6100 2200 60  0001 C CNN "Manf"
+F 5 "MCP601T-I/OT" H 6100 2200 60  0001 C CNN "Manf#"
+F 6 "Value" H 6100 2200 60  0001 C CNN "Digikey#"
+F 7 "579-MCP601T-I/OT" H 6100 2200 60  0001 C CNN "Mouser#"
+F 8 "Operational Amplifiers - Op Amps Single 2.7V" H 6100 2200 60  0001 C CNN "Description"
+	1    6100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 594B01CC
+P 4900 1350
+F 0 "C4" H 4925 1450 50  0000 L CNN
+F 1 "10u" H 4925 1250 50  0000 L CNN
+F 2 "footprints:C_0603_HandSoldering" H 4938 1200 50  0001 C CNN
+F 3 "UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 4900 1350 50  0001 C CNN
+F 4 "Yageo" H 4900 1350 60  0001 C CNN "Manf"
+F 5 "CC0805ZKY5V6BB106" H 4900 1350 60  0001 C CNN "Manf#"
+F 6 "311-1355-2-ND" H 4900 1350 60  0001 C CNN "Digikey#"
+F 7 "603-CC805ZKY5V6BB106" H 4900 1350 60  0001 C CNN "Mouser#"
+F 8 "10µF -20%, +80% 10V Ceramic Capacitor Y5V" H 4900 1350 60  0001 C CNN "Description"
+	1    4900 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C6
+U 1 1 594B023F
+P 5300 1350
+F 0 "C6" H 5325 1450 50  0000 L CNN
+F 1 "100n" H 5325 1250 50  0000 L CNN
+F 2 "footprints:C_0603_HandSoldering" H 5338 1200 50  0001 C CNN
+F 3 "Yageo_UPY-GP_NP0_16V-to-50V_9-358835.pdf" H 5300 1350 50  0001 C CNN
+F 4 "Yageo" H 5300 1350 60  0001 C CNN "Manf"
+F 5 "CC0603KRX7R7BB104" H 5300 1350 60  0001 C CNN "Manf#"
+F 6 "Value" H 5300 1350 60  0001 C CNN "Digikey#"
+F 7 "603-CC603KRX7R7BB104" H 5300 1350 60  0001 C CNN "Mouser#"
+F 8 "Value" H 5300 1350 60  0001 C CNN "Description"
+	1    5300 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 594B027F
+P 4800 2100
+F 0 "R1" V 4880 2100 50  0000 C CNN
+F 1 "10k" V 4700 2100 50  0000 C CNN
+F 2 "footprints:R_1206_HandSoldering" V 4730 2100 50  0001 C CNN
+F 3 "PYu-RC_Group_51_RoHS_L_7.pdf" H 4800 2100 50  0001 C CNN
+F 4 "Yageo" H 4800 2100 60  0001 C CNN "Manf"
+F 5 "RC1206JR-0710KL" H 4800 2100 60  0001 C CNN "Manf#"
+F 6 "311-10KERTR-ND" H 4800 2100 60  0001 C CNN "Digikey#"
+F 7 "Value" H 4800 2100 60  0001 C CNN "Mouser#"
+F 8 "10k Ohm ±5% 0.25W, 1/4W Chip, Moisture Resistant Thick Film" H 4800 2100 60  0001 C CNN "Description"
+	1    4800 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 594B0304
+P 5100 1600
+F 0 "#PWR07" H 5100 1350 50  0001 C CNN
+F 1 "GND" H 5100 1450 50  0000 C CNN
+F 2 "" H 5100 1600 50  0001 C CNN
+F 3 "" H 5100 1600 50  0001 C CNN
+	1    5100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 594B0325
+P 6000 2550
+F 0 "#PWR08" H 6000 2300 50  0001 C CNN
+F 1 "GND" H 6000 2400 50  0000 C CNN
+F 2 "" H 6000 2550 50  0001 C CNN
+F 3 "" H 6000 2550 50  0001 C CNN
+	1    6000 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 594B033F
+P 5100 2800
+F 0 "#PWR09" H 5100 2550 50  0001 C CNN
+F 1 "GND" H 5100 2650 50  0000 C CNN
+F 2 "" H 5100 2800 50  0001 C CNN
+F 3 "" H 5100 2800 50  0001 C CNN
+	1    5100 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR010
+U 1 1 594B0569
+P 5100 1000
+F 0 "#PWR010" H 5100 850 50  0001 C CNN
+F 1 "+5V" H 5100 1140 50  0000 C CNN
+F 2 "" H 5100 1000 50  0001 C CNN
+F 3 "" H 5100 1000 50  0001 C CNN
+	1    5100 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1200 4900 1100
+Wire Wire Line
+	5300 1100 5300 1200
+Wire Wire Line
+	5300 1600 5300 1500
+Wire Wire Line
+	4900 1600 5300 1600
+Wire Wire Line
+	4900 1600 4900 1500
+Connection ~ 5100 1600
+Wire Wire Line
+	6000 1100 6000 1900
+Wire Wire Line
+	5800 2100 4950 2100
+Wire Wire Line
+	5100 2350 5100 2100
+Connection ~ 5100 2100
+Wire Wire Line
+	5100 2650 5100 2800
+Wire Wire Line
+	5800 2300 5650 2300
+Wire Wire Line
+	5650 2300 5650 2800
+Wire Wire Line
+	5650 2800 6600 2800
+Wire Wire Line
+	6600 2800 6600 2200
+Wire Wire Line
+	6400 2200 7400 2200
+Connection ~ 6600 2200
+Wire Wire Line
+	6000 2550 6000 2500
+$Comp
+L GND #PWR011
+U 1 1 594B1832
+P 5700 5400
+F 0 "#PWR011" H 5700 5150 50  0001 C CNN
+F 1 "GND" H 5700 5250 50  0000 C CNN
+F 2 "" H 5700 5400 50  0001 C CNN
+F 3 "" H 5700 5400 50  0001 C CNN
+	1    5700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L NUP2105LT1G U1
+U 1 1 594C52B0
+P 5100 5300
+F 0 "U1" H 5100 5700 60  0000 C CNN
+F 1 "NUP2105LT1G" H 5100 4900 60  0000 C CNN
+F 2 "footprints:SC-59_Handsoldering" H 5100 5300 60  0001 C CNN
+F 3 "NUP2105L-D-771105.pdf" H 5100 5300 60  0001 C CNN
+F 4 "ON Semiconductor" H 5100 5300 60  0001 C CNN "Manf"
+F 5 "NUP2105LT1G" H 5100 5300 60  0001 C CNN "Manf#"
+F 6 "NUP2105LT1GOSCT-ND" H 5100 5300 60  0001 C CNN "Digikey#"
+F 7 "Value" H 5100 5300 60  0001 C CNN "Mouser#"
+F 8 "TVS DIODE 24VWM 44VC" H 5100 5300 60  0001 C CNN "Description"
+	1    5100 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4150 5950 4150
+Wire Wire Line
+	4150 4750 5950 4750
+Wire Wire Line
+	6750 4350 5950 4350
+Wire Wire Line
+	5950 4350 5950 4150
+Wire Wire Line
+	6750 4550 5950 4550
+Wire Wire Line
+	5950 4550 5950 4750
+Wire Wire Line
+	4600 5500 4700 5500
+Wire Wire Line
+	5500 5300 5700 5300
+Wire Wire Line
+	5700 5300 5700 5400
+$Comp
+L GND #PWR012
+U 1 1 594C7F7D
+P 6650 4150
+F 0 "#PWR012" H 6650 3900 50  0001 C CNN
+F 1 "GND" H 6650 4000 50  0000 C CNN
+F 2 "" H 6650 4150 50  0001 C CNN
+F 3 "" H 6650 4150 50  0001 C CNN
+	1    6650 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 594C96DB
+P 8400 6050
+F 0 "#PWR013" H 8400 5800 50  0001 C CNN
+F 1 "GND" H 8400 5900 50  0000 C CNN
+F 2 "" H 8400 6050 50  0001 C CNN
+F 3 "" H 8400 6050 50  0001 C CNN
+	1    8400 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 5350 8500 5550
+Wire Wire Line
+	8200 5350 8200 5550
+Connection ~ 8400 5350
+Wire Wire Line
+	8200 5850 8200 5950
+Wire Wire Line
+	8200 5950 8500 5950
+Wire Wire Line
+	8500 5950 8500 5850
+Wire Wire Line
+	8400 6050 8400 5950
+Connection ~ 8400 5950
+Wire Wire Line
+	6650 4750 6750 4750
+Connection ~ 8200 5350
+Wire Wire Line
+	6750 4150 6650 4150
+NoConn ~ 7750 4150
+$Comp
+L MAX31855KASA+ U2
+U 1 1 594CC498
+P 7250 4450
+F 0 "U2" H 7250 4950 60  0000 C CNN
+F 1 "MAX31855KASA+" H 7250 3950 60  0000 C CNN
+F 2 "footprints:SOIC-8" H 7250 4450 60  0001 C CNN
+F 3 "MAX31855.pdf" H 7250 4450 60  0001 C CNN
+F 4 "Maxim Integrated" H 7250 4450 60  0001 C CNN "Manf"
+F 5 "MAX31855KASA+" H 7250 4450 60  0001 C CNN "Manf#"
+F 6 "MAX31855KASA+-ND" H 7250 4450 60  0001 C CNN "Digikey#"
+F 7 "Value" H 7250 4450 60  0001 C CNN "Mouser#"
+F 8 "Sensor Interface Thermocouple To Digital Converter" H 7250 4450 60  0001 C CNN "Description"
+	1    7250 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 5350 6650 4750
+Wire Wire Line
+	7750 4550 8950 4550
+Wire Wire Line
+	7750 4750 8950 4750
+$Comp
+L Screw_Terminal_1x02 J2
+U 1 1 594D3D2C
+P 3900 1700
+F 0 "J2" H 3900 1950 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 3750 1700 50  0001 C TNN
+F 2 "footprints:TerminalBlock_Pheonix_MKDS1.5-2pol" H 3900 1475 50  0001 C CNN
+F 3 "MKDS Phoenix 1-5.pdf" H 3875 1700 50  0001 C CNN
+F 4 "Phoenix Contact" H 3900 1700 60  0001 C CNN "Manf"
+F 5 "1751248" H 3900 1700 60  0001 C CNN "Manf#"
+F 6 "277-5719-ND" H 3900 1700 60  0001 C CNN "Digikey#"
+F 7 "Value" H 3900 1700 60  0001 C CNN "Mouser#"
+F 8 "2 Position Wire to Board Terminal Block Horizontal with Board 0.138" H 3900 1700 60  0001 C CNN "Description"
+	1    3900 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 4350 8950 4350
+Wire Wire Line
+	4100 1800 4200 1800
+Wire Wire Line
+	4200 1800 4200 2100
+Wire Wire Line
+	4100 2100 4650 2100
+Wire Wire Line
+	4200 1600 4100 1600
+Wire Wire Line
+	4200 1100 4200 1600
+Connection ~ 5300 1100
+Connection ~ 5100 1100
+Connection ~ 4900 1100
+Wire Wire Line
+	4150 4150 4150 4350
+Wire Wire Line
+	4150 4350 3950 4350
+Wire Wire Line
+	3950 4550 4150 4550
+Wire Wire Line
+	4150 4550 4150 4750
+Text HLabel 7400 2200 2    60   Output ~ 0
+ADC_TERM
+Text HLabel 8950 4350 2    60   Output ~ 0
+MISO_TCUP
+Text HLabel 8950 4550 2    60   Input ~ 0
+SS_TCUP
+Text HLabel 8950 4750 2    60   Input ~ 0
+SCK_TCUP
+Wire Wire Line
+	8400 5350 8400 5250
+$Comp
+L +3.3V-RESCUE-tempRalayPoncho #PWR15
+U 1 1 594EDCA2
+P 8400 5250
+AR Path="/594EDCA2" Ref="#PWR15"  Part="1" 
+AR Path="/5949816A/594EDCA2" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 8400 5100 50  0001 C CNN
+F 1 "+3.3V" H 8400 5390 50  0000 C CNN
+F 2 "" H 8400 5250 50  0001 C CNN
+F 3 "" H 8400 5250 50  0001 C CNN
+	1    8400 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1100 5100 1000
+$Comp
+L Screw_Terminal_1x02 J3
+U 1 1 595021F9
+P 3900 2200
+F 0 "J3" H 3900 2450 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 3750 2200 50  0001 C TNN
+F 2 "footprints:TerminalBlock_Pheonix_MKDS1.5-2pol" H 3900 1975 50  0001 C CNN
+F 3 "MKDS Phoenix 1-5.pdf" H 3875 2200 50  0001 C CNN
+F 4 "Phoenix Contact" H 3900 2200 60  0001 C CNN "Manf"
+F 5 "1751248" H 3900 2200 60  0001 C CNN "Manf#"
+F 6 "277-5719-ND" H 3900 2200 60  0001 C CNN "Digikey#"
+F 7 "Value" H 3900 2200 60  0001 C CNN "Mouser#"
+F 8 "2 Position Wire to Board Terminal Block Horizontal with Board 0.138" H 3900 2200 60  0001 C CNN "Description"
+	1    3900 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_1x02 J1
+U 1 1 59502271
+P 3750 4450
+F 0 "J1" H 3750 4700 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 3600 4450 50  0001 C TNN
+F 2 "footprints:TerminalBlock_Pheonix_MKDS1.5-2pol" H 3750 4225 50  0001 C CNN
+F 3 "MKDS Phoenix 1-5.pdf" H 3725 4450 50  0001 C CNN
+F 4 "Phoenix Contact" H 3750 4450 60  0001 C CNN "Manf"
+F 5 "1751248" H 3750 4450 60  0001 C CNN "Manf#"
+F 6 "277-5719-ND" H 3750 4450 60  0001 C CNN "Digikey#"
+F 7 "Value" H 3750 4450 60  0001 C CNN "Mouser#"
+F 8 "2 Position Wire to Board Terminal Block Horizontal with Board 0.138" H 3750 4450 60  0001 C CNN "Description"
+	1    3750 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 5950268C
+P 8200 5700
+F 0 "C7" H 8225 5800 50  0000 L CNN
+F 1 "10u" H 8225 5600 50  0000 L CNN
+F 2 "footprints:C_0603_HandSoldering" H 8238 5550 50  0001 C CNN
+F 3 "UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 8200 5700 50  0001 C CNN
+F 4 "Yageo" H 8200 5700 60  0001 C CNN "Manf"
+F 5 "CC0805ZKY5V6BB106" H 8200 5700 60  0001 C CNN "Manf#"
+F 6 "311-1355-2-ND" H 8200 5700 60  0001 C CNN "Digikey#"
+F 7 "603-CC805ZKY5V6BB106" H 8200 5700 60  0001 C CNN "Mouser#"
+F 8 "10µF -20%, +80% 10V Ceramic Capacitor Y5V" H 8200 5700 60  0001 C CNN "Description"
+	1    8200 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C5
+U 1 1 5950292D
+P 5100 2500
+F 0 "C5" H 5125 2600 50  0000 L CNN
+F 1 "10u" H 5125 2400 50  0000 L CNN
+F 2 "footprints:C_0603_HandSoldering" H 5138 2350 50  0001 C CNN
+F 3 "UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5100 2500 50  0001 C CNN
+F 4 "Yageo" H 5100 2500 60  0001 C CNN "Manf"
+F 5 "CC0805ZKY5V6BB106" H 5100 2500 60  0001 C CNN "Manf#"
+F 6 "311-1355-2-ND" H 5100 2500 60  0001 C CNN "Digikey#"
+F 7 "603-CC805ZKY5V6BB106" H 5100 2500 60  0001 C CNN "Mouser#"
+F 8 "10µF -20%, +80% 10V Ceramic Capacitor Y5V" H 5100 2500 60  0001 C CNN "Description"
+	1    5100 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C2
+U 1 1 59502ABD
+P 5700 4450
+F 0 "C2" H 5725 4550 50  0000 L CNN
+F 1 "100n" H 5725 4350 50  0000 L CNN
+F 2 "footprints:C_0603_HandSoldering" H 5738 4300 50  0001 C CNN
+F 3 "Yageo_UPY-GP_NP0_16V-to-50V_9-358835.pdf" H 5700 4450 50  0001 C CNN
+F 4 "Yageo" H 5700 4450 60  0001 C CNN "Manf"
+F 5 "CC0603KRX7R7BB104" H 5700 4450 60  0001 C CNN "Manf#"
+F 6 "Value" H 5700 4450 60  0001 C CNN "Digikey#"
+F 7 "603-CC603KRX7R7BB104" H 5700 4450 60  0001 C CNN "Mouser#"
+F 8 "Value" H 5700 4450 60  0001 C CNN "Description"
+	1    5700 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C8
+U 1 1 59502B96
+P 8500 5700
+F 0 "C8" H 8525 5800 50  0000 L CNN
+F 1 "100n" H 8525 5600 50  0000 L CNN
+F 2 "footprints:C_0603_HandSoldering" H 8538 5550 50  0001 C CNN
+F 3 "Yageo_UPY-GP_NP0_16V-to-50V_9-358835.pdf" H 8500 5700 50  0001 C CNN
+F 4 "Yageo" H 8500 5700 60  0001 C CNN "Manf"
+F 5 "CC0603KRX7R7BB104" H 8500 5700 60  0001 C CNN "Manf#"
+F 6 "Value" H 8500 5700 60  0001 C CNN "Digikey#"
+F 7 "603-CC603KRX7R7BB104" H 8500 5700 60  0001 C CNN "Mouser#"
+F 8 "Value" H 8500 5700 60  0001 C CNN "Description"
+	1    8500 5700
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	3400 650  8150 650 
+Wire Notes Line
+	8150 650  8150 3100
+Wire Notes Line
+	8150 3100 3400 3100
+Wire Notes Line
+	3400 3100 3400 650 
+Wire Notes Line
+	3400 3450 3400 6350
+Text Notes 1300 1750 0    99   ~ 0
+Entrada Termoresistor
+Text Notes 1150 4500 0    99   ~ 0
+Entrada Termocupla
+Wire Notes Line
+	3600 4650 3500 4650
+Wire Notes Line
+	3500 4650 3500 4200
+Wire Notes Line
+	3500 4200 3600 4200
+Wire Notes Line
+	3600 4200 3600 4250
+Wire Notes Line
+	3500 4450 3000 4450
+Text Notes 1250 2250 0    99   ~ 0
+Resistor de Referencia
+Wire Wire Line
+	6650 5350 8500 5350
+Wire Wire Line
+	5700 4300 5700 4150
+Connection ~ 5700 4150
+Wire Wire Line
+	5700 4600 5700 4750
+Connection ~ 5700 4750
+Wire Wire Line
+	4700 4150 4700 5100
+Connection ~ 4700 4150
+Wire Wire Line
+	4600 4750 4600 5500
+Connection ~ 4600 4750
+Wire Wire Line
+	4200 2300 4200 2800
+Wire Wire Line
+	4100 2300 4200 2300
+Connection ~ 4200 2100
+Wire Wire Line
+	4200 1100 6000 1100
+Wire Notes Line
+	3600 1500 3600 1900
+Wire Notes Line
+	3600 1900 3700 1900
+Wire Notes Line
+	3600 1500 3700 1500
+Wire Notes Line
+	3600 2000 3600 2400
+Wire Notes Line
+	3600 2400 3700 2400
+Wire Notes Line
+	3600 2000 3700 2000
+Wire Notes Line
+	3000 1700 3600 1700
+Wire Notes Line
+	3000 2200 3600 2200
+Wire Notes Line
+	3400 3450 9700 3450
+Wire Notes Line
+	9700 3450 9700 6350
+Wire Notes Line
+	9700 6350 3400 6350
+Text HLabel 4200 2800 2    60   UnSpc ~ 0
+GNDA_TERM
+$EndSCHEMATC
