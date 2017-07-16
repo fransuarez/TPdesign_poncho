@@ -1,36 +1,21 @@
 EESchema Schematic File Version 2
 LIBS:TempRelay
+LIBS:power
 LIBS:tempRelayPoncho-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 2 4
 Title "Poncho Edu CIAA - Salidas digitales"
 Date "2017-06-14"
 Rev "1.0"
-Comp "Autor: Francisco Suárez"
-Comment1 "Revisor:  Mariano Orlante"
-Comment2 "Licencia: 'Docs/Licencia.txt\""
-Comment3 ""
+Comp "CESE - Trabajo final de la materia \"Diseño de Circuitos Impresos\""
+Comment1 "Licencia: 'Docs/Licencia.txt\""
+Comment2 "Revisor:  Mariano Orlante "
+Comment3 "Autor: Francisco Suárez"
 Comment4 ""
 $EndDescr
-$Comp
-L R R2
-U 1 1 59499B25
-P 2900 2900
-F 0 "R2" V 2980 2900 50  0000 C CNN
-F 1 "1k" V 2800 2900 50  0000 C CNN
-F 2 "footprints:R_1206_HandSoldering" V 2830 2900 50  0001 C CNN
-F 3 "../Datasheets/PYu-RC_Group_51_RoHS_L_7.pdf" H 2900 2900 50  0001 C CNN
-F 4 "Yageo" H 2900 2900 60  0001 C CNN "Manf"
-F 5 "RC1206FR-071KL" H 2900 2900 60  0001 C CNN "Manf#"
-F 6 "311-1.00KFRTR-ND" H 2900 2900 60  0001 C CNN "Digikey#"
-F 7 "Value" H 2900 2900 60  0001 C CNN "Mouser#"
-F 8 "1k Ohm ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric) Moisture Resistant Thick Film" H 2900 2900 60  0001 C CNN "Description"
-	1    2900 2900
-	1    0    0    -1  
-$EndComp
 $Comp
 L DIODE D3
 U 1 1 59499B39
@@ -48,21 +33,10 @@ F 8 "Diode Standard 300V 1A SMA" H 3500 3050 60  0001 C CNN "Description"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +5V #PWR015
-U 1 1 5949AA7B
-P 3900 2550
-F 0 "#PWR015" H 3900 2400 50  0001 C CNN
-F 1 "+5V" H 3900 2690 50  0000 C CNN
-F 2 "" H 3900 2550 50  0001 C CNN
-F 3 "" H 3900 2550 50  0001 C CNN
-	1    3900 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR016
+L GND #PWR01
 U 1 1 5949AA9F
 P 3900 4550
-F 0 "#PWR016" H 3900 4300 50  0001 C CNN
+F 0 "#PWR01" H 3900 4300 50  0001 C CNN
 F 1 "GND" H 3900 4400 50  0000 C CNN
 F 2 "" H 3900 4550 50  0001 C CNN
 F 3 "" H 3900 4550 50  0001 C CNN
@@ -100,21 +74,10 @@ Wire Wire Line
 Wire Wire Line
 	5100 2950 5800 2950
 $Comp
-L +5V #PWR017
-U 1 1 594AF973
-P 3900 5150
-F 0 "#PWR017" H 3900 5000 50  0001 C CNN
-F 1 "+5V" H 3900 5290 50  0000 C CNN
-F 2 "" H 3900 5150 50  0001 C CNN
-F 3 "" H 3900 5150 50  0001 C CNN
-	1    3900 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR018
+L GND #PWR02
 U 1 1 594AF979
 P 3900 7150
-F 0 "#PWR018" H 3900 6900 50  0001 C CNN
+F 0 "#PWR02" H 3900 6900 50  0001 C CNN
 F 1 "GND" H 3900 7000 50  0000 C CNN
 F 2 "" H 3900 7150 50  0001 C CNN
 F 3 "" H 3900 7150 50  0001 C CNN
@@ -200,34 +163,18 @@ F 8 "Red 645nm LED Indication - Discrete 1.9V 0805 (2012 Metric)" H 3900 1700 60
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R6
-U 1 1 594DCD59
-P 3900 1300
-F 0 "R6" V 3980 1300 50  0000 C CNN
-F 1 "1k" V 3800 1300 50  0000 C CNN
-F 2 "footprints:R_1206_HandSoldering" V 3830 1300 50  0001 C CNN
-F 3 "../Datasheets/PYu-RC_Group_51_RoHS_L_7.pdf" H 3900 1300 50  0001 C CNN
-F 4 "Yageo" H 3900 1300 60  0001 C CNN "Manf"
-F 5 "RC1206FR-071KL" H 3900 1300 60  0001 C CNN "Manf#"
-F 6 "311-1.00KFRTR-ND" H 3900 1300 60  0001 C CNN "Digikey#"
-F 7 "Value" H 3900 1300 60  0001 C CNN "Mouser#"
-F 8 "1k Ohm ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric) Moisture Resistant Thick Film" H 3900 1300 60  0001 C CNN "Description"
-	1    3900 1300
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R9
 U 1 1 594DCE06
 P 4550 1050
 F 0 "R9" V 4450 1050 50  0000 C CNN
 F 1 "100" V 4650 1050 50  0000 C CNN
-F 2 "footprints:R_1206_HandSoldering" V 4480 1050 50  0001 C CNN
-F 3 "../Datasheets/PYu-R_INT-thick_7.pdf" H 4550 1050 50  0001 C CNN
-F 4 "Vishay" H 4550 1050 60  0001 C CNN "Manf"
-F 5 "RC1206FR-07100RL" H 4550 1050 60  0001 C CNN "Manf#"
-F 6 "311-100FRTR-ND" H 4550 1050 60  0001 C CNN "Digikey#"
-F 7 "Value" H 4550 1050 60  0001 C CNN "Mouser#"
-F 8 "100 Ohm ±1% 0.25W, 1/4W Chip Resistor 1206 Moisture Resistant Thick Film" H 4550 1050 60  0001 C CNN "Description"
+F 2 "footprints:R_0805_HandSoldering" V 4480 1050 50  0001 C CNN
+F 3 "../Datasheets/Yageo_08112016_RC0805-968729.pdf" H 4550 1050 50  0001 C CNN
+F 4 "Yageo" H 4550 1050 60  0001 C CNN "Manf"
+F 5 "RC0805FR-07100RL" H 4550 1050 60  0001 C CNN "Manf#"
+F 6 "311-100CRCT-ND" H 4550 1050 60  0001 C CNN "Digikey#"
+F 7 "603-RC0805FR-07100RL" H 4550 1050 60  0001 C CNN "Mouser#"
+F 8 "1Thick Film Resistors - SMD 100 OHM 1%" H 4550 1050 60  0001 C CNN "Description"
 	1    4550 1050
 	0    1    1    0   
 $EndComp
@@ -247,10 +194,10 @@ Wire Wire Line
 Wire Wire Line
 	3900 1850 3900 1950
 $Comp
-L GND #PWR019
+L GND #PWR03
 U 1 1 594DE1D3
 P 3900 1950
-F 0 "#PWR019" H 3900 1700 50  0001 C CNN
+F 0 "#PWR03" H 3900 1700 50  0001 C CNN
 F 1 "GND" H 3900 1800 50  0000 C CNN
 F 2 "" H 3900 1950 50  0001 C CNN
 F 3 "" H 3900 1950 50  0001 C CNN
@@ -258,10 +205,10 @@ F 3 "" H 3900 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR020
+L GND #PWR04
 U 1 1 594DE220
 P 4800 1450
-F 0 "#PWR020" H 4800 1200 50  0001 C CNN
+F 0 "#PWR04" H 4800 1200 50  0001 C CNN
 F 1 "GND" H 4800 1300 50  0000 C CNN
 F 2 "" H 4800 1450 50  0001 C CNN
 F 3 "" H 4800 1450 50  0001 C CNN
@@ -283,34 +230,18 @@ Wire Wire Line
 Wire Wire Line
 	3900 5950 3900 6250
 $Comp
-L R R3
-U 1 1 594F55BD
-P 2900 5500
-F 0 "R3" V 2980 5500 50  0000 C CNN
-F 1 "1k" V 2800 5500 50  0000 C CNN
-F 2 "footprints:R_1206_HandSoldering" V 2830 5500 50  0001 C CNN
-F 3 "../Datasheets/PYu-RC_Group_51_RoHS_L_7.pdf" H 2900 5500 50  0001 C CNN
-F 4 "Yageo" H 2900 5500 60  0001 C CNN "Manf"
-F 5 "RC1206FR-071KL" H 2900 5500 60  0001 C CNN "Manf#"
-F 6 "311-1.00KFRTR-ND" H 2900 5500 60  0001 C CNN "Digikey#"
-F 7 "Value" H 2900 5500 60  0001 C CNN "Mouser#"
-F 8 "1k Ohm ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric) Moisture Resistant Thick Film" H 2900 5500 60  0001 C CNN "Description"
-	1    2900 5500
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R4
 U 1 1 594F5E3B
 P 3350 3850
 F 0 "R4" V 3430 3850 50  0000 C CNN
 F 1 "1k" V 3250 3850 50  0000 C CNN
-F 2 "footprints:R_1206_HandSoldering" V 3280 3850 50  0001 C CNN
-F 3 "../Datasheets/PYu-RC_Group_51_RoHS_L_7.pdf" H 3350 3850 50  0001 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 3280 3850 50  0001 C CNN
+F 3 "../Datasheets/Yageo_08112016_RC0805-968729.pdf" H 3350 3850 50  0001 C CNN
 F 4 "Yageo" H 3350 3850 60  0001 C CNN "Manf"
-F 5 "RC1206FR-071KL" H 3350 3850 60  0001 C CNN "Manf#"
-F 6 "311-1.00KFRTR-ND" H 3350 3850 60  0001 C CNN "Digikey#"
-F 7 "Value" H 3350 3850 60  0001 C CNN "Mouser#"
-F 8 "1k Ohm ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric) Moisture Resistant Thick Film" H 3350 3850 60  0001 C CNN "Description"
+F 5 "RC0805FR-071KL" H 3350 3850 60  0001 C CNN "Manf#"
+F 6 "311-1.00KCRCT-ND" H 3350 3850 60  0001 C CNN "Digikey#"
+F 7 "603-RC0805FR-071KL" H 3350 3850 60  0001 C CNN "Mouser#"
+F 8 "Thick Film Resistors - SMD 1K OHM 1%" H 3350 3850 60  0001 C CNN "Description"
 	1    3350 3850
 	0    1    1    0   
 $EndComp
@@ -320,46 +251,14 @@ U 1 1 594F5EE4
 P 3550 4200
 F 0 "R7" V 3630 4200 50  0000 C CNN
 F 1 "10k" V 3450 4200 50  0000 C CNN
-F 2 "footprints:R_1206_HandSoldering" V 3480 4200 50  0001 C CNN
-F 3 "../Datasheets/PYu-RC_Group_51_RoHS_L_7.pdf" H 3550 4200 50  0001 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 3480 4200 50  0001 C CNN
+F 3 "../Datasheets/Yageo_08112016_RC0805-968729.pdf" H 3550 4200 50  0001 C CNN
 F 4 "Yageo" H 3550 4200 60  0001 C CNN "Manf"
-F 5 "RC1206JR-0710KL" H 3550 4200 60  0001 C CNN "Manf#"
-F 6 "311-10KERTR-ND" H 3550 4200 60  0001 C CNN "Digikey#"
-F 7 "Value" H 3550 4200 60  0001 C CNN "Mouser#"
-F 8 "10k Ohm ±5% 0.25W, 1/4W Chip, Moisture Resistant Thick Film" H 3550 4200 60  0001 C CNN "Description"
+F 5 "RC0805FR-0710KL" H 3550 4200 60  0001 C CNN "Manf#"
+F 6 "311-10.0KCRCT-ND" H 3550 4200 60  0001 C CNN "Digikey#"
+F 7 "603-RC0805FR-0710KL" H 3550 4200 60  0001 C CNN "Mouser#"
+F 8 "Thick Film Resistors - SMD 10K OHM 1%" H 3550 4200 60  0001 C CNN "Description"
 	1    3550 4200
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R5
-U 1 1 594F7C31
-P 3350 6450
-F 0 "R5" V 3430 6450 50  0000 C CNN
-F 1 "1k" V 3250 6450 50  0000 C CNN
-F 2 "footprints:R_1206_HandSoldering" V 3280 6450 50  0001 C CNN
-F 3 "../Datasheets/PYu-RC_Group_51_RoHS_L_7.pdf" H 3350 6450 50  0001 C CNN
-F 4 "Yageo" H 3350 6450 60  0001 C CNN "Manf"
-F 5 "RC1206FR-071KL" H 3350 6450 60  0001 C CNN "Manf#"
-F 6 "311-1.00KFRTR-ND" H 3350 6450 60  0001 C CNN "Digikey#"
-F 7 "Value" H 3350 6450 60  0001 C CNN "Mouser#"
-F 8 "1k Ohm ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric) Moisture Resistant Thick Film" H 3350 6450 60  0001 C CNN "Description"
-	1    3350 6450
-	0    1    1    0   
-$EndComp
-$Comp
-L R R8
-U 1 1 594F7CE0
-P 3550 6850
-F 0 "R8" V 3630 6850 50  0000 C CNN
-F 1 "10k" V 3450 6850 50  0000 C CNN
-F 2 "footprints:R_1206_HandSoldering" V 3480 6850 50  0001 C CNN
-F 3 "../Datasheets/PYu-RC_Group_51_RoHS_L_7.pdf" H 3550 6850 50  0001 C CNN
-F 4 "Yageo" H 3550 6850 60  0001 C CNN "Manf"
-F 5 "RC1206JR-0710KL" H 3550 6850 60  0001 C CNN "Manf#"
-F 6 "311-10KERTR-ND" H 3550 6850 60  0001 C CNN "Digikey#"
-F 7 "Value" H 3550 6850 60  0001 C CNN "Mouser#"
-F 8 "10k Ohm ±5% 0.25W, 1/4W Chip, Moisture Resistant Thick Film" H 3550 6850 60  0001 C CNN "Description"
-	1    3550 6850
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -504,7 +403,7 @@ U 1 1 595B78E3
 P 4500 3150
 F 0 "U4" H 4500 3525 60  0000 C CNN
 F 1 "G5LE-1A-5DC" H 4525 2775 60  0000 C CNN
-F 2 "" H 4500 3150 60  0001 C CNN
+F 2 "footprints:Relay_G5LE-1A-5DC-5mm" H 4500 3150 60  0001 C CNN
 F 3 "" H 4500 3150 60  0001 C CNN
 	1    4500 3150
 	1    0    0    -1  
@@ -515,9 +414,111 @@ U 1 1 595B7E68
 P 4500 5750
 F 0 "U6" H 4500 6125 60  0000 C CNN
 F 1 "G5LE-1A-5DC" H 4525 5375 60  0000 C CNN
-F 2 "" H 4500 5750 60  0001 C CNN
+F 2 "footprints:Relay_G5LE-1A-5DC-5mm" H 4500 5750 60  0001 C CNN
 F 3 "" H 4500 5750 60  0001 C CNN
 	1    4500 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 59631CF0
+P 3900 1300
+F 0 "R8" V 3980 1300 50  0000 C CNN
+F 1 "1k" V 3800 1300 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 3830 1300 50  0001 C CNN
+F 3 "../Datasheets/Yageo_08112016_RC0805-968729.pdf" H 3900 1300 50  0001 C CNN
+F 4 "Yageo" H 3900 1300 60  0001 C CNN "Manf"
+F 5 "RC0805FR-071KL" H 3900 1300 60  0001 C CNN "Manf#"
+F 6 "311-1.00KCRCT-ND" H 3900 1300 60  0001 C CNN "Digikey#"
+F 7 "603-RC0805FR-071KL" H 3900 1300 60  0001 C CNN "Mouser#"
+F 8 "Thick Film Resistors - SMD 1K OHM 1%" H 3900 1300 60  0001 C CNN "Description"
+	1    3900 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 59631E23
+P 2900 2900
+F 0 "R2" V 2980 2900 50  0000 C CNN
+F 1 "1k" V 2800 2900 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 2830 2900 50  0001 C CNN
+F 3 "../Datasheets/Yageo_08112016_RC0805-968729.pdf" H 2900 2900 50  0001 C CNN
+F 4 "Yageo" H 2900 2900 60  0001 C CNN "Manf"
+F 5 "RC0805FR-071KL" H 2900 2900 60  0001 C CNN "Manf#"
+F 6 "311-1.00KCRCT-ND" H 2900 2900 60  0001 C CNN "Digikey#"
+F 7 "603-RC0805FR-071KL" H 2900 2900 60  0001 C CNN "Mouser#"
+F 8 "Thick Film Resistors - SMD 1K OHM 1%" H 2900 2900 60  0001 C CNN "Description"
+	1    2900 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R3
+U 1 1 59632A88
+P 2900 5500
+F 0 "R3" V 2980 5500 50  0000 C CNN
+F 1 "1k" V 2800 5500 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 2830 5500 50  0001 C CNN
+F 3 "../Datasheets/Yageo_08112016_RC0805-968729.pdf" H 2900 5500 50  0001 C CNN
+F 4 "Yageo" H 2900 5500 60  0001 C CNN "Manf"
+F 5 "RC0805FR-071KL" H 2900 5500 60  0001 C CNN "Manf#"
+F 6 "311-1.00KCRCT-ND" H 2900 5500 60  0001 C CNN "Digikey#"
+F 7 "603-RC0805FR-071KL" H 2900 5500 60  0001 C CNN "Mouser#"
+F 8 "Thick Film Resistors - SMD 1K OHM 1%" H 2900 5500 60  0001 C CNN "Description"
+	1    2900 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R5
+U 1 1 59632DCD
+P 3350 6450
+F 0 "R5" V 3430 6450 50  0000 C CNN
+F 1 "1k" V 3250 6450 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 3280 6450 50  0001 C CNN
+F 3 "../Datasheets/Yageo_08112016_RC0805-968729.pdf" H 3350 6450 50  0001 C CNN
+F 4 "Yageo" H 3350 6450 60  0001 C CNN "Manf"
+F 5 "RC0805FR-071KL" H 3350 6450 60  0001 C CNN "Manf#"
+F 6 "311-1.00KCRCT-ND" H 3350 6450 60  0001 C CNN "Digikey#"
+F 7 "603-RC0805FR-071KL" H 3350 6450 60  0001 C CNN "Mouser#"
+F 8 "Thick Film Resistors - SMD 1K OHM 1%" H 3350 6450 60  0001 C CNN "Description"
+	1    3350 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 59636727
+P 3550 6850
+F 0 "R6" V 3630 6850 50  0000 C CNN
+F 1 "10k" V 3450 6850 50  0000 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 3480 6850 50  0001 C CNN
+F 3 "../Datasheets/Yageo_08112016_RC0805-968729.pdf" H 3550 6850 50  0001 C CNN
+F 4 "Yageo" H 3550 6850 60  0001 C CNN "Manf"
+F 5 "RC0805FR-0710KL" H 3550 6850 60  0001 C CNN "Manf#"
+F 6 "311-10.0KCRCT-ND" H 3550 6850 60  0001 C CNN "Digikey#"
+F 7 "603-RC0805FR-0710KL" H 3550 6850 60  0001 C CNN "Mouser#"
+F 8 "Thick Film Resistors - SMD 10K OHM 1%" H 3550 6850 60  0001 C CNN "Description"
+	1    3550 6850
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5VD #PWR05
+U 1 1 596CA4CF
+P 3900 5150
+F 0 "#PWR05" H 3900 5000 50  0001 C CNN
+F 1 "+5VD" H 3900 5290 50  0000 C CNN
+F 2 "" H 3900 5150 50  0001 C CNN
+F 3 "" H 3900 5150 50  0001 C CNN
+	1    3900 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5VD #PWR06
+U 1 1 596CA60F
+P 3900 2550
+F 0 "#PWR06" H 3900 2400 50  0001 C CNN
+F 1 "+5VD" H 3900 2690 50  0000 C CNN
+F 2 "" H 3900 2550 50  0001 C CNN
+F 3 "" H 3900 2550 50  0001 C CNN
+	1    3900 2550
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
