@@ -1,4 +1,4 @@
-update=Sun 09 Jul 2017 08:10:21 PM ART
+update=Sun 16 Jul 2017 09:56:48 PM ART
 version=1
 last_client=kicad
 [pcbnew]
@@ -37,7 +37,6 @@ LabSize=60
 version=1
 [eeschema]
 version=1
-LibDir=Libs
+LibDir=
 [eeschema/libraries]
 LibName1=Libs/TempRelay
-LibName2=power
