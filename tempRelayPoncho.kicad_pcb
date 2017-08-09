@@ -3,7 +3,7 @@
   (general
     (links 90)
     (no_connects 0)
-    (area 77.949999 32.414465 164.050001 169.800001)
+    (area 57.591732 23.899999 262.600001 180.700001)
     (thickness 1.6)
     (drawings 75)
     (tracks 196)
@@ -728,6 +728,16 @@
     (pad ~ thru_hole circle (at 3.302 68.834) (size 7 7) (drill 4) (layers *.Cu *.Mask F.SilkS))
     (pad ~ thru_hole circle (at -73.025 -58.547) (size 7 7) (drill 4) (layers *.Cu *.Mask F.SilkS))
     (pad ~ thru_hole circle (at 3.302 -58.674) (size 7 7) (drill 4) (layers *.Cu *.Mask F.SilkS))
+    (model ${KIPRJMOD}/3dshapes/pin_strip_20x2.wrl
+      (at (xyz 0.05 -0.95 -0.01))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 270))
+    )
+    (model ${KIPRJMOD}/3dshapes/pin_strip_20x2.wrl
+      (at (xyz -2.75 -0.95 -0.01))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 180 270))
+    )
   )
 
   (module footprints:Relay_G5LE-1A-5DC-5mm (layer F.Cu) (tedit 596BCCC0) (tstamp 595AFE7B)
